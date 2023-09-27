@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+
+    <title>ToDo List App</title>
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <section>
+                <div>
+                    <h1 class="gray" id="todo">ToDo</h1>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="task">Task</label><br>
+                        <input type="text" id="task" name="task" placeholder="Task"><br>
+                        <input type="text" id="editTask" class="hide" name="task" placeholder="Task">
+                        <label for="description">Description</label><br>
+                        <textarea id="description" placeholder="Description"></textarea>
+                        <textarea id="editDescription" class="hide" placeholder="Description"></textarea>
+                        <button id="add">Add</button>
+                        <button id="update" class="hide">Update</button>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div id="open">
+                    <h1 class="orange">Open</h1>
+                </div>
+                <div>
+
+                </div>
+            </section>
+            <section>
+                <div id="completed">
+                    <h1 class="green">Completed</h1>
+                    
+                </div>
+                <div>
+                    <div id="buttonHolder">
+                        <button id="clear">Purge Local Storage</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
